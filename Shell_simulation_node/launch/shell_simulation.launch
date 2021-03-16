@@ -1,0 +1,8 @@
+<launch>
+    <!-- Sleep for a second before launching to ensure the environment is up -->
+    <node pkg="shell_simulation"
+          name="shell_simulation_node"
+          type="shell_simulation_node"
+          launch-prefix="bash -c 'sleep 1.0; $0 $@'"
+          />
+</launch>
